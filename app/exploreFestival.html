@@ -1,0 +1,87 @@
+---
+title: 台灣之美-節慶活動
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<div class="container mt-m mb-xxl">
+    <ol class="breadcrumb mb-sm">
+        <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+        <li class="breadcrumb-item active" aria-current="page">節慶活動</li>
+    </ol>
+    <div class="row mb-m">
+        <div class="col-3">
+            <select class="form-select text-primary" name="探索縣市">
+                <option value="全部縣市">全部縣市</option>
+                <option value="臺北市">臺北市</option>
+                <option value="新北市">新北市</option>
+                <option value="桃園市">桃園市</option>
+                <option value="臺中市">臺中市</option>
+                <option value="臺南市">臺南市</option>
+                <option value="高雄市">高雄市</option>
+                <option value="新竹縣">新竹縣</option>
+                <option value="苗栗縣">苗栗縣</option>
+                <option value="彰化縣">彰化縣</option>
+                <option value="南投縣">南投縣</option>
+                <option value="雲林縣">雲林縣</option>
+                <option value="嘉義縣">嘉義縣</option>
+                <option value="屏東縣">屏東縣</option>
+                <option value="宜蘭縣">宜蘭縣</option>
+                <option value="花蓮縣">花蓮縣</option>
+                <option value="臺東縣">臺東縣</option>
+                <option value="澎湖縣">澎湖縣</option>
+                <option value="金門縣">金門縣</option>
+                <option value="連江縣">連江縣</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <input type="date" class="form-control">
+        </div>
+        <div class="col-4">
+            <input type="text" class="form-control bg-white-dk" placeholder="你想去哪裡？請輸入關鍵字">
+        </div>
+        <div class="col-2">
+            <button class="btn btn-primary text-white w-100 white-space"><img class="me-3"
+                src="./assets/images/icon/Union.svg">搜 尋</button>
+        </div>
+    </div>
+    <h2 class="mb-3">熱門分類</h2>
+    <ul class="row mb-0" id="topAttraction">
+        <div class="col-3">
+            <a class="hotTopic mb-3" href="#">
+                <img class="hotTopic-img" src="./assets/images/hotTopic/unsplash_pn5c-CLWGzY.png" alt="">
+                <h3 class="hotTopic-title h4 text-white">地方特產</h3>
+            </a>
+        </div>
+        <div class="col-3">
+            <a class="hotTopic mb-3" href="#">
+                <img class="hotTopic-img" src="./assets/images/hotTopic/Rectangle 93.png" alt="">
+                <h3 class="hotTopic-title h4 text-white">中式美食</h3>
+            </a>
+        </div>
+        <div class="col-3">
+            <a class="hotTopic mb-3" href="#">
+                <img class="hotTopic-img" src="./assets/images/hotTopic/Rectangle 94.png" alt="">
+                <h3 class="hotTopic-title h4 text-white">甜點冰品</h3>
+            </a>
+        </div>
+        <div class="col-3">
+            <a class="hotTopic mb-3" href="#">
+                <img class="hotTopic-img" src="./assets/images/hotTopic/Rectangle 95.png" alt="">
+                <h3 class="hotTopic-title h4 text-white">異國料理</h3>
+            </a>
+        </div>
+        <div class="col-3">
+            <a class="hotTopic mb-3" href="#">
+                <img class="hotTopic-img" src="./assets/images/hotTopic/unsplash_7tvbRQ5AKs4.png" alt="">
+                <h3 class="hotTopic-title h4 text-white">伴手禮</h3>
+            </a>
+        </div>
+        <div class="col-3">
+            <a class="hotTopic mb-3" href="#">
+                <img class="hotTopic-img" src="./assets/images/hotTopic/unsplash_I8K-lIkvqYI.png" alt="">
+                <h3 class="hotTopic-title h4 text-white">素食</h3>
+            </a>
+        </div>
+    </ul>
+</div>

@@ -1,0 +1,245 @@
+---
+title: 台灣之美-首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<section>
+  <div class="container mt-l mb-m">
+    <div class="row justify-content-md-center">
+      <div class="col-6">
+        <h2 class="display-5 mb-3">
+          探索<span class="border-bottom border-2 border-warning">台灣之美</span><br>
+          讓我們更親近這片土地
+        </h2>
+        <p class="d-flex align-item-center">
+          <span class="material-icons-outlined text-warning me-2">location_on</span>台灣旅遊景點導覽
+          <span class="ms-2">Taiwan Travel Guide</span>
+        </p>
+      </div>
+      <div class="col-4">
+        <form>
+          <select class="form-select text-green-dk mb-2" aria-label="Default" name="fiterAll">
+            <option value="探索景點" selected>探索景點</option>
+            <option value="節慶活動">節慶活動</option>
+            <option value="品嚐美食">品嚐美食</option>
+          </select>
+          <div>
+            <input type="email" class="form-control bg-white-dk mb-2" placeholder="你想去哪裡？請輸入關鍵字">
+          </div>
+          <button class="btn btn-primary text-white w-100 white-space"><img class="me-3"
+              src="./assets/images/icon/Union.svg">搜 尋</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container mb-sm">
+  <div id="carouselHomeControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>新北市 | 不厭亭</h5>
+        </div>
+        <img src="./assets/images/carousel.jpg" class="d-block w-100" alt="carousel">
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>苗栗縣 | 龍系列</h5>
+        </div>
+        <img src="./assets/images/carousel01.jpg" class="d-block w-100" alt="carousel01">
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>宜蘭縣 | 羅東林業文化園區</h5>
+        </div>
+        <img src="./assets/images/carousel02.jpg" class="d-block w-100" alt="carousel02">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHomeControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHomeControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<section>
+  <div class="container mb-sm">
+    <div class="d-flex justify-content-between mb-3">
+      <h3 class="h2">近期活動</h3>
+      <a href="">
+        查看更多活動<span class="material-icons-outlined align-middle fs-6 me-2">chevron_right</span>
+      </a>
+    </div>
+    <ul class="row">
+      <li class="col-6">
+        <div class="card flex-row mb-3">
+          <img src="./assets/images/event/EventPhoto.jpg" class="img-event img-hover img-fluid rounded-start" alt="event">
+          <div class="card-body bg-white-dk d-flex flex-column justify-content-between px-4">
+            <div>
+              <span class="text-muted">2021/10/30 - 2021/11/13</span>
+              <h4>2021 日月潭花火音樂嘉年華</h4>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>南投縣
+              </p>
+              <a class="stretched-link" href="#">詳細介紹<span class="material-icons-outlined align-middle fs-6">chevron_right</span></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-6">
+        <div class="card flex-row mb-3">
+          <img src="./assets/images/event/EventPhoto-2.jpg" class="img-event img-fluid rounded-start" alt="event">
+          <div class="card-body bg-white-dk d-flex flex-column justify-content-between px-4">
+            <div>
+              <span class="text-muted">2021/10/30 - 2022/02/08</span>
+              <h4>山城花語溫泉系列活動－寶來不老溫泉季</h4>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>高雄市
+              </p>
+              <a class="stretched-link" href="#">詳細介紹<span class="material-icons-outlined align-middle fs-6">chevron_right</span></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-6">
+        <div class="card flex-row mb-3">
+          <img src="./assets/images/event/EventPhoto-1.jpg" class="img-event img-fluid rounded-start" alt="event">
+          <div class="card-body bg-white-dk d-flex flex-column justify-content-between px-4">
+            <div>
+              <span class="text-muted">2021/11/21 - 2021/11/21</span>
+              <h4>新北市萬金石馬拉松</h4>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>新北市
+              </p>
+              <a class="stretched-link" href="#">詳細介紹<span class="material-icons-outlined align-middle fs-6">chevron_right</span></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-6">
+        <div class="card flex-row mb-3">
+          <img src="./assets/images/event/EventPhoto-3.jpg" class="img-event img-fluid rounded-start" alt="event">
+          <div class="card-body bg-white-dk d-flex flex-column justify-content-between px-4">
+            <div>
+              <span class="text-muted">2021/11/27 - 2021/11/28</span>
+              <h4>2021 金門坑道音樂節</h4>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>金門縣
+              </p>
+              <a class="stretched-link" href="#">詳細介紹<span class="material-icons-outlined align-middle fs-6">chevron_right</span></a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section>
+  <div class="container mb-sm">
+    <div class="d-flex justify-content-between mb-3">
+      <h3 class="h2">熱門打卡景點</h3>
+      <a href="#">
+        查看更多景點<span class="material-icons-outlined align-middle fs-6 me-2">chevron_right</span>
+      </a>
+    </div>
+    <ul class="row">
+      <li class="col-3">
+        <a class="d-block overflow-hidden" href="attractionItem.html">
+          <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/Attraction01.jpg" alt="">
+        </a>
+        <h4 class="text-truncate">龜山島牛奶海</h4>
+        <p class="mb-0">
+          <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>宜蘭縣
+        </p>
+      </li>
+      <li class="col-3">
+        <a class="d-block overflow-hidden" href="attractionItem.html">
+          <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/Attraction02.jpg" alt="">
+        </a>
+        <h4 class="text-truncate">高美濕地(高美野生動物保護區)</h4>
+        <p class="mb-0">
+          <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>臺中市
+        </p>
+      </li>
+      <li class="col-3">
+        <a class="d-block overflow-hidden" href="attractionItem.html">
+          <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/Attraction03.jpg" alt="">
+        </a>  
+        <h4 class="text-truncate">溪頭自然教育園區</h4>
+        <p class="mb-0">
+          <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>南投縣
+        </p>
+      </li>
+      <li class="col-3">
+        <a class="d-block overflow-hidden" href="attractionItem.html">
+          <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/Attraction04.jpg" alt="">
+        </a>  
+        <h4 class="text-truncate">九份老街</h4>
+        <p class="mb-0">
+          <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>新北市
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+<section>
+  <div class="container mb-xxl">
+    <div class="d-flex justify-content-between mb-3">
+      <h3 class="h2">一再回訪美食</h3>
+      <a href="#">
+        查看更多美食<span class="material-icons-outlined align-middle fs-6 me-2">chevron_right</span>
+      </a>
+    </div>
+    <ul class="row">
+      <li class="col-3">
+        <a class="d-block overflow-hidden" href="attractionItem.html">
+          <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture.jpg" alt="">
+        </a>  
+        <h4 class="text-truncate">金都餐廳</h4>
+        <p class="mb-0">
+          <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>南投縣
+        </p>
+      </li>
+      <li class="col-3">
+        <a class="d-block overflow-hidden" href="attractionItem.html">
+          <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture-1.jpg" alt="">
+        </a>  
+        <h4 class="text-truncate">一中8兩碳烤雞排</h4>
+        <p class="mb-0">
+          <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>臺中市
+        </p>
+      </li>
+      <li class="col-3">
+        <a class="d-block overflow-hidden" href="attractionItem.html">
+          <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture-2.jpg" alt="">
+        </a>  
+        <h4 class="text-truncate">名根烤肉食材宅配外送</h4>
+        <p class="mb-0">
+          <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>新北市
+        </p>
+      </li>
+      <li class="col-3">
+        <a class="d-block overflow-hidden" href="attractionItem.html">
+          <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture-3.jpg" alt="">
+        </a>
+        <h4 class="text-truncate">石桌羊肉店</h4>
+        <p class="mb-0">
+          <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>嘉義縣
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>

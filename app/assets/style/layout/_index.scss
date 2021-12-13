@@ -1,0 +1,62 @@
+.nav{
+    &-logo{
+        display: block;
+        background-image: url('../images/Logo.png');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 241px;
+        height: 32px;
+    }
+    &-link{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 51%;
+            right: 51%;
+            bottom: 0;
+            background: #E0DA48;
+            height: 2px;
+            transition-duration: 0.3s;
+            transition-property: left, right;
+        }
+        &:hover::before{
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+.img{
+    &-hover{
+
+        transition: .3s ease-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &-event{
+        height: 150px;
+    }
+    &-checkIn{
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+        border-radius: 20px;
+    }
+}
+
+.white-space{
+    white-space: pre-wrap;
+}
+
+.line-limit-length {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; //文字不換行,這樣超出一行的部分被擷取,顯示...  
+}

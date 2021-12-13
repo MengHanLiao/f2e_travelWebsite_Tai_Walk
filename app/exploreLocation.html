@@ -1,0 +1,193 @@
+---
+title: 台灣之美-探索景點
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<div class="container mt-m mb-xxl">
+    <ol class="breadcrumb mb-sm">
+        <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+        <li class="breadcrumb-item active" aria-current="page">探索景點</li>
+    </ol>
+    <div class="row mb-m">
+        <div class="col-3">
+            <select class="form-select text-primary" name="探索縣市">
+                <option value="全部縣市">全部縣市</option>
+                <option value="臺北市">臺北市</option>
+                <option value="新北市">新北市</option>
+                <option value="桃園市">桃園市</option>
+                <option value="臺中市">臺中市</option>
+                <option value="臺南市">臺南市</option>
+                <option value="高雄市">高雄市</option>
+                <option value="新竹縣">新竹縣</option>
+                <option value="苗栗縣">苗栗縣</option>
+                <option value="彰化縣">彰化縣</option>
+                <option value="南投縣">南投縣</option>
+                <option value="雲林縣">雲林縣</option>
+                <option value="嘉義縣">嘉義縣</option>
+                <option value="屏東縣">屏東縣</option>
+                <option value="宜蘭縣">宜蘭縣</option>
+                <option value="花蓮縣">花蓮縣</option>
+                <option value="臺東縣">臺東縣</option>
+                <option value="澎湖縣">澎湖縣</option>
+                <option value="金門縣">金門縣</option>
+                <option value="連江縣">連江縣</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <input type="text" class="form-control bg-white-dk" placeholder="你想去哪裡？請輸入關鍵字">
+        </div>
+        <div class="col-3">
+            <button class="btn btn-primary text-white w-100 white-space"><img class="me-3"
+                    src="./assets/images/icon/Union.svg">搜 尋</button>
+        </div>
+    </div>
+    <div class="d-none">
+        <h2 class="mb-3">熱門主題</h2>
+        <ul class="row mb-0" id="topAttraction">
+            <div class="col-3">
+                <a class="hotTopic mb-3" href="#">
+                    <img class="hotTopic-img" src="./assets/images/hotTopic/unsplash_pn5c-CLWGzY.png" alt="">
+                    <h3 class="hotTopic-title h4 text-white">自然風景類</h3>
+                </a>
+            </div>
+            <div class="col-3">
+                <a class="hotTopic mb-3" href="#">
+                    <img class="hotTopic-img" src="./assets/images/hotTopic/Rectangle 93.png" alt="">
+                    <h3 class="hotTopic-title h4 text-white">觀光工廠類</h3>
+                </a>
+            </div>
+            <div class="col-3">
+                <a class="hotTopic mb-3" href="#">
+                    <img class="hotTopic-img" src="./assets/images/hotTopic/Rectangle 94.png" alt="">
+                    <h3 class="hotTopic-title h4 text-white">遊憩類</h3>
+                </a>
+            </div>
+            <div class="col-3">
+                <a class="hotTopic mb-3" href="#">
+                    <img class="hotTopic-img" src="./assets/images/hotTopic/Rectangle 95.png" alt="">
+                    <h3 class="hotTopic-title h4 text-white">休閒農業類</h3>
+                </a>
+            </div>
+            <div class="col-3">
+                <a class="hotTopic mb-3" href="#">
+                    <img class="hotTopic-img" src="./assets/images/hotTopic/unsplash_7tvbRQ5AKs4.png" alt="">
+                    <h3 class="hotTopic-title h4 text-white">生態類</h3>
+                </a>
+            </div>
+            <div class="col-3">
+                <a class="hotTopic mb-3" href="#">
+                    <img class="hotTopic-img" src="./assets/images/hotTopic/unsplash_I8K-lIkvqYI.png" alt="">
+                    <h3 class="hotTopic-title h4 text-white">溫泉類</h3>
+                </a>
+            </div>
+            <div class="col-3">
+                <a class="hotTopic mb-3" href="#">
+                    <img class="hotTopic-img" src="./assets/images/hotTopic/Rectangle 98.png" alt="">
+                    <h3 class="hotTopic-title h4 text-white">古蹟類</h3>
+                </a>
+            </div>
+        </ul>
+    </div>
+</div>
+<div class="container d-none">
+    <div class="d-flex align-items-end mb-3">
+        <h3 class="h2 me-2 mb-0">搜尋結果</h3>
+        <p class="mb-0">共有 <span class="text-yellow-dk">240</span> 筆</p>
+    </div>
+    <ul class="row mb-l">
+        <li class="col-3 mb-sm">
+            <a class="d-block overflow-hidden" href="attractionItem.html">
+                <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture.jpg" alt="">
+            </a>
+            <h4 class="text-truncate">金都餐廳</h4>
+            <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>南投縣
+            </p>
+        </li>
+        <li class="col-3 mb-sm">
+            <a class="d-block overflow-hidden" href="attractionItem.html">
+                <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture-1.jpg" alt="">
+            </a>
+            <h4 class="text-truncate">一中8兩碳烤雞排</h4>
+            <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>臺中市
+            </p>
+        </li>
+        <li class="col-3 mb-sm">
+            <a class="d-block overflow-hidden" href="attractionItem.html">
+                <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture-2.jpg" alt="">
+            </a>
+            <h4 class="text-truncate">名根烤肉食材宅配外送</h4>
+            <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>新北市
+            </p>
+        </li>
+        <li class="col-3 mb-sm">
+            <a class="d-block overflow-hidden" href="attractionItem.html">
+                <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture-3.jpg" alt="">
+            </a>
+            <h4 class="text-truncate">石桌羊肉店</h4>
+            <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>嘉義縣
+            </p>
+        </li>
+        <li class="col-3 mb-sm">
+            <a class="d-block overflow-hidden" href="attractionItem.html">
+                <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture-1.jpg" alt="">
+            </a>
+            <h4 class="text-truncate">一中8兩碳烤雞排</h4>
+            <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>臺中市
+            </p>
+        </li>
+        <li class="col-3 mb-sm">
+            <a class="d-block overflow-hidden" href="attractionItem.html">
+                <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture-2.jpg" alt="">
+            </a>
+            <h4 class="text-truncate">名根烤肉食材宅配外送</h4>
+            <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>新北市
+            </p>
+        </li>
+        <li class="col-3 mb-sm">
+            <a class="d-block overflow-hidden" href="attractionItem.html">
+                <img class="img-hover img-checkIn mb-2" src="./assets/images/clockin/RestaurantPicture-3.jpg" alt="">
+            </a>
+            <h4 class="text-truncate">石桌羊肉店</h4>
+            <p class="mb-0">
+                <span class="material-icons-outlined align-middle fs-6 me-2">location_on</span>嘉義縣
+            </p>
+        </li>
+    </ul>
+    <nav aria-label="d-flex">
+        <ul class="pagination justify-content-center mb-xxl">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span class="material-icons-outlined align-middle fs-6">chevron_left</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span class="material-icons-outlined align-middle fs-6">chevron_right</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="container mb-xxl">
+    <div class="d-flex align-items-end mb-l">
+        <h3 class="h2 me-2 mb-0">搜尋結果</h3>
+        <p class="mb-0">共有 <span class="text-yellow-dk">0</span> 筆</p>
+    </div>
+    <div class="text-center">
+        <img class="mb-3" src="./assets/images/icon/noFind.png" alt="">
+        <p class="fs-5 fw-bold text-primary">目前查無資料 <br>
+            請重新搜尋</p>
+    </div>
+</div>

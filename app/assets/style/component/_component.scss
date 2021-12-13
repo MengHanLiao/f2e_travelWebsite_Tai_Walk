@@ -1,0 +1,12 @@
+.carousel{
+    &-caption{
+        top: 45%;
+    }
+}
+
+.page-link{
+    &:hover{
+        background-color: $primary;
+        color: #ffffff;
+    }
+}
